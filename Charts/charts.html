@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Charts.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+</head>
+<body>
+    <div style="height:500px;width:700px">
+        <canvas id="myChart" height="20%" width="30%"></canvas>
+    </div>
+    <script>
+        var chart = document.getElementById("myChart").getContext('2d');
+        var lineChart = new Chart(chart, {
+            type: 'line',
+            data: {
+                labels:['chennai','trichy','madurai','combiature'],
+                datasets:[
+                    {data:[25,90,35,70],
+                    backgroundColor: ['rgba(255, 99, 132, 0.2)']
+                    },
+                    {data:[15,50,75,40],
+                    backgroundColor: ['rgba(54, 162, 235, 0.2)']
+                    },
+                    {data:[5,75,30,40],
+                    backgroundColor: ['rgba(255, 206, 86, 0.2)']
+                    },
+                    {data:[20,70,30,90],
+                    backgroundColor: ['rgba(75, 192, 192, 0.2)']
+                    }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        stacked: true,
+                        display: true,
+                        position: 'right',
+                        ticks: {
+                            beginAtZero: true
+                            }
+                            }]
+                            }
+            }
+        })
+    </script>
+</body>
+</html>

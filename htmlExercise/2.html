@@ -1,0 +1,66 @@
+<HTML>
+
+        <HEAD>
+      
+          <TITLE> Client side Javascript-Reading Data from Check Boxes </TITLE>
+      
+        <SCRIPT LANGUAGE="JavaScript">
+      
+          function Enter() {
+      
+           var strChoice
+           if(document.getElementsByName('chkSalad')[0].checked)
+
+             strChoice = "Salad" + "\n" ;
+      
+           if (document.getElementsByName('chkRice')[0].checked == true)
+      
+             strChoice = strChoice + "Rice" + "\n" ;
+      
+           if (document.getElementsByName('chkFish')[0].checked == true)
+      
+             strChoice = strChoice + "Fish" + "\n" ;
+      
+           if (document.getElementsByName('chkDsrt')[0].checked == true)
+      
+             strChoice = strChoice + "Dessert" + "\n" ;
+      
+           alert(" Dinner Choices = " + "\n" + strChoice);
+      
+         }
+      
+        </SCRIPT>
+      
+        </HEAD>
+      
+        <BODY>
+      
+          <H2> <CENTER> Client Side Scripting </CENTER> </H2>
+      
+          <H3> <CENTER> Using the Check Box INPUT CONTROL </CENTER></H3>
+      
+          <HR>
+      
+          Check the Items You would like in your Dinner
+      
+          <FORM NAME=frmData>
+      
+            <PRE>
+      
+               <INPUT TYPE=CheckBox NAME=chkSalad> Salad
+      
+               <INPUT TYPE=CheckBox NAME=chkRice> Rice
+      
+               <INPUT TYPE=CheckBox NAME=chkFish CHECKED> Fish
+      
+               <INPUT TYPE=CheckBox NAME=chkDsrt> Dessert
+      
+            </PRE>
+      
+            <INPUT TYPE=BUTTON NAME=cmdEnter VALUE="Submit Choices" onClick="Enter();">
+      
+          </FORM>
+      
+        </BODY>
+      
+      <HTML

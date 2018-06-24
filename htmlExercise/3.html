@@ -1,0 +1,89 @@
+<HTML>
+
+        <HEAD>
+      
+          <TITLE> Client side scripting - Javascript Reading Data from Radio Buttons </TITLE>
+      
+       
+      
+        <SCRIPT LANGUAGE="JAVASCRIPT">
+      
+         function cmdSubmit_OnClick() {
+      
+           var i, strChoice ;
+      
+           for (i = 0; i < document.getElementsByName('optDinnerItem').length; i++) {
+      
+              if (document.getElementsByName('optDinnerItem')[i].checked==true)
+      
+                strChoice = document.getElementsByName('optDinnerItem')[i].value + "\n" ;
+      
+             }
+      
+           for (i = 0; i < document.getElementsByName('optDessertItem').length; i++) {
+      
+              if (document.getElementsByName('optDessertItem')[i].checked == true)
+      
+                strChoice = strChoice + document.getElementsByName('optDessertItem')[i].value + "\n" ;
+      
+            }
+      
+           alert (" Dinner Choices = " + "\n" + strChoice);
+      
+         }
+      
+        </SCRIPT>
+      
+       
+      
+        </HEAD>
+      
+        <BODY>
+      
+          <H2> <CENTER> Client Side Scripting </CENTER> </H2>
+      
+          <H3> <CENTER> Using the Radio Button Control </CENTER></H3>
+      
+          <H4> <CENTER> (Also referred to as Option Button sometimes) </CENTER> </H4>
+      
+          <HR>
+      
+          <H4> Choose a main Dinner Item </H4>
+      
+          <FORM NAME=frmData>
+      
+           <PRE>
+      
+            Pizza <INPUT TYPE=RADIO NAME=optDinnerItem VALUE="PIZZA" CHECKED>
+      
+            Steak <INPUT TYPE=RADIO NAME=optDinnerItem VALUE="Steak">
+      
+            Fish  <INPUT TYPE=RADIO NAME=optDinnerItem VALUE="Fish">
+      
+            <HR>
+      
+      <H4> Choose a Dessert </H4>
+      
+            Chocolate Cake  <INPUT TYPE=RADIO NAME=optDessertItem VALUE="Chocolate Cake" CHECKED>
+      
+            Cheese Cake     <INPUT TYPE=RADIO NAME=optDessertItem VALUE="Cheese Cake">
+      
+            Icecream Sundae <INPUT TYPE=RADIO NAME=optDessertItem VALUE="Icecream Sundae">
+      
+            <HR>
+      
+       
+      
+            <INPUT TYPE=BUTTON VALUE="Submit Dinner and Dessert Choices" NAME="cmdSubmit"
+      
+                       onClick="cmdSubmit_OnClick();">
+      
+          </PRE>     
+      
+          </FORM>
+      
+        </BODY>
+      
+      <HTML>
+      
+      

@@ -1,0 +1,11 @@
+.mainBody {
+    background-color:lightgray;
+    align-content: center;
+}
+
+.centerAlign {
+    text-align: center;
+    color:black;
+    size: 25px;
+    max-width: auto;
+}

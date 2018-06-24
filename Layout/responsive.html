@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0px auto;
+        }
+        .header{
+            background-color: tomato;
+            width: 960px;
+            text-align: center;
+        }
+        .pullleft{
+            background-color: yellowgreen;
+            float: left;
+            width: 700px;
+        }
+        .pullright{
+            background-color: goldenrod;
+            float: left;
+            width: 260px;
+        }
+
+        @media screen and (max-width:959px) {
+            .container, .header {
+                width: 100%
+            }
+            .pullleft {
+                width: 70%
+            }
+            .pullright {
+                width: 30%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> Goutham Kumar</div>
+        <section class="pullleft">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 
+        </section>
+        <aside class="pullright">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+        </aside>
+    </div>
+</body>
+</html>

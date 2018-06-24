@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Net Ninja Mockup</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+        }
+        .mainContainer {
+            width: 1000px;
+            margin: 10px auto;
+            background-color: white;
+            border: 2px ridge lightgrey;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        header,footer {
+            background-color: lightgrey;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1em;
+            clear: both;
+        }
+        section {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1em;
+            float: left;
+        }
+        .head2 {
+            box-sizing: border-box;
+            float: left;
+            padding: 1em;
+            margin: 0px;
+            width: 100%;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            /* background-color: green; */
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+        section li {
+            width: 90%;
+            padding: 5px;
+            border-left: solid 5px gray;
+            margin: 5px;
+            float: left;
+            clear: both;
+            /* overflow: hidden; */
+        }
+        .pullLeft {
+            float: left;
+            width: 80%;
+            padding: 1em;
+            box-sizing: border-box;
+        }
+        .pullRight {
+            float: right;
+            width: 10%;
+            padding: 1em;
+            box-sizing: border-box;
+            background-color: green;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+        ul li:hover {
+            border-left: 5px solid purple;
+        }
+        ul li span:nth-child(2):hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <header>
+            <h1 style="text-align: center">Bookorama</h1>
+            <h3 style="text-align: center">Books for Ninjas</h3>
+            <input type="text" placeholder="Search Book...." style="display: block;width: 484px;height:25px;margin: auto;padding:10px;">
+        </header>
+        <section>
+            <h2 class="head2">Books to Read</h2>
+            <ul>
+                <li>
+                    <span class="pullLeft">
+                        Name of the Wind
+                    </span>
+                    <span class="pullRight">
+                        <a href="#">delete</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="pullLeft">
+                        The Wise Man's Fear
+                    </span>
+                    <span class="pullRight">
+                        <a href="#">delete</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="pullLeft">
+                        Kafaka on the Shore
+                    </span>
+                    <span class="pullRight">
+                        <a href="#">delete</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="pullLeft">
+                        The Master and Margarita
+                    </span>
+                    <span class="pullRight">
+                        <a href="#">delete</a>
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <footer style="background-color: transparent">
+            <div style="width: 80%;margin: auto;">
+                <center>
+                    <input type="text" placeholder=" Add a book..">
+                    <span>
+                        Add
+                    </span>
+                </center>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

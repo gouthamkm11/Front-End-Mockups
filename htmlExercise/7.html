@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Practice</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script async src="./scripts.js"></script>
+        <style>
+            #grpList, #grpList option
+            {
+                border: 2px solid yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            <center>HTML ALL INPUT TYPES</center>
+        </h2>
+        <hr>
+        <h3>
+            <center>FORM DATA TEXT BOXES</center>
+        </h3>
+        <pre>
+            <form action="#" name="userDataForm" id="userData">
+                NAME: <input type="text" name="txtName">
+                  ID: <input type="text" name="txtID">
+                      <input type= "button" name="usrDataBtn" value="Show User Data" onclick="displayData()">
+            </form>
+        </pre>
+        <hr>
+        <h3>
+            <center>FORM DATA CHECKBOXES</center>
+        </h3>
+        <pre>
+            <form action="#" name="chkBoxForm" id="chkBox">
+                <input type="checkbox" name="chkSalad" value="SALAD">SALAD
+                <input type="checkbox" name="chkRice" value="RICE"checked>RICE
+                <input type="checkbox" name="chkFish" value="FISH">FISH
+                <input type="button" name="chkBoxBtn" value="Show Checked Values" onclick="displayChkBoxData()">
+            </form>
+        </pre>
+        <hr>
+        <h3>
+            <center>FORM DATA RADIO BUTTONS</center>
+        </h3>
+        <pre>
+            <form action="#" name="radioBtnForm" id="rdBtn">
+                <input type="radio" name="foodRdBtn" value="PIZZA"> PIZZA
+                <input type="radio" name="foodRdBtn" value="PASTA"> PASTA
+                <input type="radio" name="foodRdBtn" value="FRIES"> FRIES
+                <input type="button" name="foodRadioBtn" value="Display Selected Data" onclick="displayRdBtnData()">
+            </form>
+        </pre>
+        <hr>
+        <h3>
+            <center>FORM DATA DROPDOWN LIST</center>
+        </h3>
+        <pre>
+            <form action="#" name="drpDownFormData" id="drpDown">
+                <select name="drpDown">
+                    <option>NAME</option>
+                    <option>Age</option>
+                    <option>Sex</option>
+                    <option>SSN</option>
+                </select>
+                <input type="button" name="drpDownBtn" value="Display Dropdown Value" onclick="displayDrpDownItem()">
+            </form>
+        </pre>
+        <hr>
+        <h3>
+            <center>FORM DATA GROUP LIST</center>
+        </h3>
+            <pre>
+                <form action="#" name="grpListFormData" id="grpList">
+                    <select name="grpListData" size="4" multiple>
+                        <option>NAME</option>
+                        <option>Age</option>
+                        <option>Sex</option>
+                        <option>SSN</option>
+                    </select>
+                    <input type="button" name="grpListBtn" value="Display List Value" onclick="displayGrpListItem()">
+                </form>
+            </pre>
+        <hr>
+        <h3>
+            <center>FORM DATA TEXT AREA</center>
+        </h3>
+        <pre>
+            <form action="#" name="txtAreaFormData" id="txtArea">
+                <textarea name="commentTxtArea" cols="30" rows="10">Comments:</textarea>
+                <input type="button" name="txtAreaBtn" value="Display Text Area" onclick="displayTextArea()">
+            </form>
+        </pre>
+    </body>
+</html>
