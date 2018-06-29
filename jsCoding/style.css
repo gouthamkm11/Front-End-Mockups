@@ -1,11 +1,23 @@
-.mainBody {
+body {
     background-color:lightgray;
-    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;   
 }
 
-.centerAlign {
+.loginContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 450px;
+    margin: 0px auto;
+}
+
+.loginContainer * {
+    width: 45%;
+    margin: 5px 5px;
+    padding: 5px;
     text-align: center;
-    color:black;
-    size: 25px;
-    max-width: auto;
+    justify-content: center;
 }

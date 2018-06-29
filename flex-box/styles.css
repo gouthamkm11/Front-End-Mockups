@@ -1,0 +1,45 @@
+/* .container{
+    border: 5px solid salmon;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+} */
+
+/* .item{
+    background-color: aqua;
+    text-align: center;
+    margin: 2px 2px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+} */
+
+/* flex-box styling */
+
+/* .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+} */
+
+.loginContainer {
+    margin: 0 auto;
+    width: 220px;
+    border: 2px solid slateblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.loginElements {
+    margin: 5px 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

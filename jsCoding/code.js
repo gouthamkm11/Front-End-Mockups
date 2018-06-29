@@ -86,17 +86,6 @@
 
 
 
-const carArray =
-[
-    {type:"Fiat", model:"500", color:"white"},
-    {type:"BMW", model:"500", color:"white"},
-    {type:"Porsche", model:"5", color:"Yellow"},
-    {type:"Ferrari", model:"200", color:"Red"},
-    {type:"Chev", model:"150", color:"Black"},
-    {type:"Ford", model:"50", color:"Grey"},
-    {type:"Mini", model:"500", color:"Orange"},
-]
-
 const numberArray =
 [
     12,32,45,6,78,90,34,5,67,12,90,87,54,14,43,32
@@ -227,6 +216,145 @@ const numberArray =
 // for(let i=0; i<)
 
 
-if(arrayData == []){
-    console.log('rest');
+// if(arrayData == []){
+//     console.log('rest');
+// }
+
+//Class creation in js old way
+// let Person = function(fname,lname,age){
+//     this.FirstName = fname;
+//     this.LastName = lname;
+//     this.Age = age;
+//     this.printName = function(){
+//         console.log(`Person's name is ${this.FirstName}  ${this.LastName}`);
+//     }
+// }
+
+// let Goutham = new Person('Goutham','Somasundaram',27);
+// Goutham.printName();
+
+
+//Class creation the new way
+// class Person1{
+//     constructor(fname,lname,age){
+//         this.FirstName = fname;
+//         this.LastName = lname;
+//         this.Age = age;
+//     }
+
+//     printName() {
+//         console.log(`Harish's name is ${this.FirstName}  ${this.LastName}`)
+//     }
+// }
+
+// let Harish = new Person1('Harish','Namasivayam',31);
+// Harish.printName();
+
+
+const carArray =
+[
+    {type:"Fiat", model:"500", color:"white"},
+    {type:"BMW", model:"500", color:"white"},
+    {type:"Porsche", model:"5", color:"Yellow"},
+    {type:"Ferrari", model:"200", color:"Red"},
+    {type:"Chev", model:"150", color:"Black"},
+    {type:"Ford", model:"50", color:"Grey"},
+    {type:"Mini", model:"500", color:"Orange"},
+]
+
+// let result = carArray.map(function(value,index,array){
+//     return value
+// });
+// console.log(result);
+
+
+// let result = carArray.filter(function(value,index,array){
+//     return value.color =='white';
+// })
+
+// console.log(result);
+
+
+// let circle = {
+//     //Properties
+//     radius: 1,
+//     location: {
+//         x : 10,
+//         y : 20
+//     },
+//     //Methods
+//     draw: function(){
+//         console.log('draw function called');
+//     }
+// }
+
+// circle.draw();
+
+ //constructor function
+//  function Person(fname,lname){
+//      this.Firstname = fname;
+//      this.Lastname = lname;
+//  }
+
+//  let person100 = new Person('Goutham','Somasundaram');
+
+// function giveAns(){
+//     ( 10 == 10) ? [0,1] : 0;
+// }
+ 
+// console.log(giveAns());
+
+
+
+// var twoSum = function(nums, target) {
+//     for(let i=0; i<(nums.length-1); i++)
+//         {
+//             for(let j=i+1; j <= nums.length; j++)
+//             {
+//                 ((nums[i] + nums[j]) == target) ? 'ans' : 0;
+//             }
+//         }
+// };
+
+// console.log(twoSum([2,7,11,15],9));
+
+
+// function findDigit(number){
+//     let n = number;
+//     let counter = 0;
+//     console.log(Math.ceil(Math.log10(n)));
+//     // while(n !== (n/10)*10) {
+//     //     n = n / 10;
+//     //     counter++;
+//     //     console.log(`n is ${n} counter is ${counter}`);
+//     //     }
+// }
+
+// findDigit();
+
+//Palindrom problem solved using stack
+
+function checkPalindrom(checkString){
+    //Declaring variables to store the input data and reverse string
+    let inputData = [];
+    let reverseString = "";
+
+    
+    //converting a string to character array
+    for(let i=0; i<checkString.length;i++){
+        inputData.push(checkString[i]);
+    }
+
+    //reverse the inputData array by pop the inputData array
+    for(let i=0; i<checkString.length;i++){
+        reverseString = reverseString + inputData.pop();
+    }
+
+    //check if the word is a palindorm or not
+    return (checkString == reverseString)? console.log(`Palindrom`) : console.log(`not a palindrom`);
 }
+
+checkPalindrom("add");
+
+
+
